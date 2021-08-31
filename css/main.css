@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+:root {
+  --corPrimaria: #1d1d1d;
+  --corPrimariaSombra: #3a3a3a;
+  --corSecundaria: #005ac2;
+  --corSecundariaSombra: #0077ff;
+  --corTerciaria: #EAEBED;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--corPrimaria);
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1180px;
+  height: 540px;
+  border-radius: 20px;
+  background: var(--corPrimariaSombra);
+}
+
+body .container .arrow {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  color: var(--corTerciaria);
+  border-radius: 10px;
+  background: var(--corSecundaria);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body .container .arrow:hover {
+  background: var(--corSecundariaSombra);
+}
+
+body .container .arrowRight {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 43px;
+  cursor: pointer;
+}
+
+body .container .card {
+  position: relative;
+  width: 280px;
+  height: 440px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: var(--corSecundaria);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body .container .cardLeft {
+  opacity: 0.8;
+}
+
+body .container .cardRight {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=main.css.map */
